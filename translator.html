@@ -1,18 +1,66 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL Translator</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
-      <h1>URL Translator</h1>
-      <form method="post" action="/translate">
-        <label for="url">Enter the URL to translate:</label><br>
-        <input type="url" id="url" name="url" required><br>
-        <button type="submit">Translate</button>
-      </form>   
-      <a href="{{ pdf }}" download>Download PDF</a>
-    </div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <h1 style="font-family:Trebuchet MS;">Translate Your URLs in Just One Click</h1>
+          <form method="post" action="/translate">
+            <input type="url" id="url" name="url" placeholder="Enter your URL here" required>
+            <button type="submit">Translate</button>
+          </form> 
+        </div>
+      </section>
+      
+      <section class="features-section">
+        <div class="container">
+          <h2>Key Features</h2>
+          <div class="row">
+            <div class="feature-box">
+              <h3>Quick and Easy Translation</h3>
+              <p>Translate any URL with just one click.</p>
+            </div>
+            <div class="feature-box">
+              <h3>Support for Multiple Languages</h3>
+              <p>Translate URLs between a variety of languages.</p>
+            </div>
+            <div class="feature-box">
+              <h3>Free and Accessible</h3>
+              <p>Use URL Translator from anywhere in the world, for free.</p>
+            </div>
+            <div class="feature-box">
+              <h3>No Account or Registration Required</h3>
+              <p>Use URL Translator without creating an account or registering.</p>
+            </div>
+            <div class="feature-box">
+              <h3>PDF Download</h3>
+              <p>Download a PDF copy of the translated URL.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 URL Translator. All Rights Reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
